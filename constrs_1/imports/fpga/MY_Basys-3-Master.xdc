@@ -19,13 +19,13 @@ set_property -dict { PACKAGE_PIN W15  IOSTANDARD LVCMOS33 } [get_ports { i_B[0] 
 set_property -dict { PACKAGE_PIN V15  IOSTANDARD LVCMOS33 } [get_ports { i_B[1]  }]; #IO_L21P_T3_DQS_14          ,Sch=SW5
 set_property -dict { PACKAGE_PIN W14  IOSTANDARD LVCMOS33 } [get_ports { i_B[2]  }]; #IO_L22N_T3_A04_D20_14      ,Sch=SW6
 set_property -dict { PACKAGE_PIN W13  IOSTANDARD LVCMOS33 } [get_ports { i_B[3]  }]; #IO_L22P_T3_A05_D21_14      ,Sch=SW7
-set_property -dict { PACKAGE_PIN V2   IOSTANDARD LVCMOS33 } [get_ports { i_Cin  }]; #IO_L5P_T0_34               ,Sch=SW8
+#set_property -dict { PACKAGE_PIN V2   IOSTANDARD LVCMOS33 } [get_ports { i_Cin  }]; #IO_L5P_T0_34               ,Sch=SW8
 #set_property -dict { PACKAGE_PIN T3   IOSTANDARD LVCMOS33 } [get_ports { sw[9]  }]; #IO_L2N_T0_34               ,Sch=SW9
 #set_property -dict { PACKAGE_PIN T2   IOSTANDARD LVCMOS33 } [get_ports { sw[10] }]; #IO_L1N_T0_34               ,Sch=SW10
-#set_property -dict { PACKAGE_PIN R3   IOSTANDARD LVCMOS33 } [get_ports { sw[11] }]; #IO_L2P_T0_34               ,Sch=SW11
-#set_property -dict { PACKAGE_PIN W2   IOSTANDARD LVCMOS33 } [get_ports { sw[12] }]; #IO_L5N_T0_34               ,Sch=SW12
-set_property -dict { PACKAGE_PIN U1   IOSTANDARD LVCMOS33 } [get_ports { i_DS[1] }]; #IO_L3N_T0_DQS_34           ,Sch=SW13
-set_property -dict { PACKAGE_PIN T1   IOSTANDARD LVCMOS33 } [get_ports { i_DS[0] }]; #IO_L3P_T0_DQS_34           ,Sch=SW14
+set_property -dict { PACKAGE_PIN R3   IOSTANDARD LVCMOS33 } [get_ports { i_Sel[0] }]; #IO_L2P_T0_34               ,Sch=SW11
+set_property -dict { PACKAGE_PIN W2   IOSTANDARD LVCMOS33 } [get_ports { i_Sel[1] }]; #IO_L5N_T0_34               ,Sch=SW12
+set_property -dict { PACKAGE_PIN U1   IOSTANDARD LVCMOS33 } [get_ports { i_DigitSelect[0] }]; #IO_L3N_T0_DQS_34           ,Sch=SW13
+set_property -dict { PACKAGE_PIN T1   IOSTANDARD LVCMOS33 } [get_ports { i_DigitSelect[1] }]; #IO_L3P_T0_DQS_34           ,Sch=SW14
 set_property -dict { PACKAGE_PIN R2   IOSTANDARD LVCMOS33 } [get_ports { i_EN }]; #IO_L1P_T0_34               ,Sch=SW15
 
 
