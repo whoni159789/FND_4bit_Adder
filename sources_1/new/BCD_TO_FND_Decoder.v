@@ -14,11 +14,11 @@ module BCD_TO_FND_Decoder(
     begin
         if(i_EN)
         begin
-            r_Font = 8'hff;
+            r_Font = 8'h00;
         end
         else
         begin
-            // r_Font = 8'hff;
+            r_Font = 8'h00;
             case (i_Value)
                 4'h0 : r_Font = 8'hc0;
                 4'h1 : r_Font = 8'hf9;
@@ -30,8 +30,6 @@ module BCD_TO_FND_Decoder(
                 4'h7 : r_Font = 8'hf8;
                 4'h8 : r_Font = 8'h80;
                 4'h9 : r_Font = 8'h98;
-                4'ha : r_Font = 8'h7f;
-                default : r_Font = 8'hff;
             endcase
         end
     end
